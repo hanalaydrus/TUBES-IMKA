@@ -1,0 +1,414 @@
+@media only screen and (max-width : 768px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+@font-face {
+	font-family:"adam";
+	src: url(../fonts/ADAM.otf);
+}
+@font-face {
+	font-family:"Ailerons";
+	src: url(../fonts/Ailerons.otf);
+}
+@font-face {
+	font-family:"Myriad-Reguler";
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+	font-family:"Kirvy-Regular";
+	src: url(../fonts/Kirvy-Regular.otf);
+}
+@font-face {
+	font-family:"CicleFina";
+	src: url(../fonts/CicleFina.ttf);
+}
+/*@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}*/
+.center-justified {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+.waktu {
+	margin: 8vh;
+	color : white;
+	font-family: adam;
+	font-size: 1vw;
+	font-size: 5vh;
+}
+.info {
+	color : white;
+	font-family: adam;
+	font-size: 1vw;
+	font-size: 5vh;
+}
+
+body {
+	background-color: #011755;
+}
+/* ---------- NAVIGATION ----------- */
+.logo {
+	padding-top: 12px;
+}
+.navbar-brand {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+}
+.navbar {
+	z-index: 999;
+    background-color: transparent;
+    color: black !important;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px !important;
+    font-family: Ailerons;
+    letter-spacing: 5px;
+    line-height: 1.42857143 !important;
+}
+.navbar-nav li a:hover {
+	color: white !important;
+    background-color: #00a69c !important;
+}
+.navbar li a, .navbar .navbar-brand {
+	padding-top: 12px;
+	padding-bottom: 12px;
+    color: black !important;
+}
+.navbar-nav li {
+	z-index: 999;
+	background-color: transparent !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@media (min-width: 1170px) {
+    .navbar-nav li {
+    	margin-left: 30px;
+    	margin-right: 30px;
+    }
+}
+.navbar li.dropdown.active.open a {
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.navbar li.active a {
+    -webkit-box-shadow:inset 0px 0px 0px 3px #00a69c;
+    -moz-box-shadow:inset 0px 0px 0px 3px #00a69c;
+    box-shadow:inset 0px 0px 0px 3px #00a69c;
+}
+.navbar-default .navbar-nav > .active{
+   color: #000;
+   background: transparent;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: transparent;
+ }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #00a69c !important;
+}
+.dropdown-menu {
+	min-width: 0px;
+	padding: 0px;
+	margin: 0px;
+	color: black; 
+	background-color: white;
+	border-color: #00a69c;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.dropdown-menu li {
+	border-bottom: solid;
+	border-color: #00a69c;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	font-size: 12.3px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.dropdown-menu li a {
+	margin: 0px;
+	padding: 5px 21px;
+}
+
+.nav.navbar-nav > li.dropdown.active.open > a.dropdown-toggle, 
+.nav.navbar-nav > li.dropdown.active.open > ul.dropdown-menu a:hover,
+.nav.navbar-nav > li.dropdown.open > a, 
+.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu a:hover {
+  	background-color: #00a69c !important;
+  	color: white !important;
+}
+.footer {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: black;
+	background-color: white;
+	overflow: hidden;
+}
+.footer .glyphicon {
+	font-size: 15px;
+	margin-top: 10px;
+	color: black;
+}
+.footer .words {
+	margin-top: 5px;
+	margin-bottom: 10px;	
+	color: black;
+	font-size: 18px;
+    font-family: Ailerons;
+}
+.footer .col-sm-2 {
+	border-top: solid;
+	border-bottom: solid;
+	border-color: black;
+}
+.modal-header, .close {
+    background-color: white;
+    border: none;
+    color: #00a69c !important;
+    text-align: center;
+    font-size: 30px;
+}
+.loginbtn > .btn-success {
+	border: 0;
+	border-radius: 0;
+	color: white;
+	background-color: #00a69c;
+	font-family: arial;
+}
+.loginbtn > .btn-success:focus {
+	border: none;
+	border-radius: 0;
+	color: white;
+	background-color: black;
+	font-family: arial;
+}
+
+img.profpic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profpic:hover {
+	background-color: black;
+}
+.modal-footer {
+	padding-bottom: 30px;
+    background-color: white;
+    text-align: center;
+    border: none;
+}
+/* ---------------- HOME PAGE CSS ---------------- */
+.home img.img-responsive {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (max-width: 640px) {
+    .home .row-1{
+		margin: 8vh;
+	}
+}
+@media (min-width: 940px) {
+    .home .row-1{
+		margin: 18vh;
+	}
+}
+.home .firstbtn > .btn-default, 
+.home .firstbtn > .btn-default:hover, 
+.home .firstbtn > .btn-default:active, 
+.home .firstbtn > .btn-default:focus,
+.home .firstbtn > .btn-default.active{
+	padding-top: 14px;
+	padding-left: 20px;
+	border: 0;
+	border-radius: 0;
+	color: white;
+	background-color: #00a69c;
+	font-family: Myriad-Reguler;
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+
+.home .firstbtn > .btn-default:active:focus, 
+.home .firstbtn > .btn-default.active {
+    background-color: #00a69c;
+    box-shadow: none;
+}
+.home .secondbtn > .btn-default{
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-left: 20px;
+	border: 0;
+	border-radius: 0;
+	color: white;
+	background-color: #00a69c;
+	font-family: Myriad-Reguler;
+	font-size: 18px;
+	letter-spacing: 5px;	
+}
+.home .row-1 {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.home .row-2 {
+	margin-top: 8vh;
+}
+.home .words-1 {
+	color: black;
+	margin-bottom: 20px;
+	font-family: adam;
+	font-size: 5vw;
+	font-size: 10vh;
+}
+@media (max-width: 768px) {
+    .home .words-1 {
+		color: black;
+		margin-bottom: 20px;
+		font-family: adam;
+		font-size: 12vw;
+		font-size: 9vh;
+	}
+}
+.home .words-2 {
+	color: black;
+	margin-bottom: 20px;
+	font-family: adam;
+}
+.home .words-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: black;
+	margin-bottom: 12px;
+	font-family: arial;
+}
+.home .bg-0 {
+	display: none;
+	height: 100vh;
+	background-color: #DBFCF4;
+}
+.home .bg-0 > button {
+	margin-top: 8px;
+}
+.home .bg-1 {
+  	height: 100vh;
+  	position: relative;
+	background-image: url(../img/skyplane.jpg);
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-attachment: fixed;
+  	background-size: cover;
+	/* box-shadow: 8px 8px 20px #817c79; */
+  	overflow: hidden;
+}
+.home .bg-4 {
+	overflow: hidden;
+}
+.home .img {
+	padding-left: 92px;
+}
+/* ----------- INDONESIA AVIATION PAGE CSS ----------- */
+.indonesiaAviation .words-1 {
+	color: #00a69c;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-family: adam;
+	font-size: 40px;
+}
+.indonesiaAviation .words-2 {
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	font-family: adam;
+	text-align: left;
+	font-size: 20px;
+}
+.indonesiaAviation table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.indonesiaAviation th,.indonesiaAviation td {
+    text-align: left;
+    padding: 8px;
+}
+
+.indonesiaAviation tr:nth-child(even){
+	background-color: #f2f2f2
+}
+
+.indonesiaAviation th {
+    background-color: #00a69c;
+    color: black;
+}
+/* ----------- FUTURE UTILIZATION PAGE CSS ----------- */
+.futureUtilization .words-1 {
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	font-family: adam;
+	font-size: 40px;
+}
+/* ----------- UAV PAGE CSS ----------- */
+.uav .words-1 {
+	color: #008c83;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-family: adam;
+	font-size: 40px;
+	border: solid;
+	border-color: #008c83;
+}
+.uav .bg-1 {
+	background-color: #008c83;
+	color: white;
+}
+.uav .row-2 img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.uav h1 {
+	font-family: adam;
+}
